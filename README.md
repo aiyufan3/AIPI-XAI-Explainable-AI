@@ -1,20 +1,31 @@
-# AIPI-XAI-Explainable-AI
-# LIME-Based Explainability for Image Classification Using ResNet34
+## Explainable AI for Image Classification using LIME
 
-This project demonstrates the use of Local Interpretable Model-Agnostic Explanations (LIME) to generate visual explanations for a pre-trained deep learning image classifier (ResNet34). The notebook provides a detailed analysis of how LIME can be used to interpret predictions for individual images, highlighting specific regions that contribute most to the model's decision-making process. The visualizations generated help build a better understanding of the model’s behavior and identify areas where the model might be confused or biased.
+### Overview
+This project implements **Local Interpretable Model-agnostic Explanations (LIME)** to provide interpretable insights into the predictions made by a deep learning image classification model (ResNet34). The goal is to visualize which regions of the image contribute the most to the model’s decisions, making the predictions more understandable and transparent.
 
-## **Project Overview**
-The project consists of the following main components:
-1. **Environment Setup**: Installation of necessary libraries and configuration of the runtime environment.
-2. **Data Loading and Preprocessing**: Downloading and preparing a sample image to serve as input for the ResNet34 model.
-3. **Model Loading and Prediction**: Using a pre-trained ResNet34 model to classify the input image and retrieve the top predicted class.
-4. **LIME Explanations**: Generating local explanations for the predicted class using LIME.
-5. **Visualizations**: Multiple visualizations are provided to illustrate LIME's explanations, including positive contributions, positive and negative contributions, and top-N superpixels.
+Through a series of visualizations, the project demonstrates how LIME highlights critical superpixels that affect the model’s output, reveals potential biases in multi-class predictions, and identifies strengths and weaknesses in the interpretability of complex neural networks.
 
-## **Visualizations**
-The project includes several visualization techniques to interpret the model's predictions effectively:
+### Key Features
+- **LIME Visualizations** for model interpretability.
+- Analysis of **top-N class predictions** for the model’s outputs.
+- **Superpixel Segmentation** to localize influential regions in the image.
+- Comparison of **positive and negative feature contributions**.
+- Clear visual overlays to pinpoint decision-making regions.
 
-1. **Positive Contributions**: Shows regions that support the model's decision for the given class.
-2. **Positive & Negative Contributions**: Highlights regions that both support and oppose the prediction.
-3. **Top-N Contributing Regions**: Isolates the most influential superpixels for the prediction.
-4. **Superpixel Segmentation**: Displays the segmented superpixels with their respective contribution values.
+### Setup and Installation
+
+#### Prerequisites
+- Python 3.6+
+- Jupyter Notebook or Google Colab
+- The following libraries:
+  - `numpy`
+  - `matplotlib`
+  - `torch`
+  - `torchvision`
+  - `scikit-image`
+  - `lime`
+
+#### Clone the Repository
+```bash
+https://github.com/aiyufan3/AIPI-XAI-Explainable-AI.git
+cd 
